@@ -1,0 +1,32 @@
+The glass manufacturer currently serves 50 customers located across the US, each of which has demand for five different glass products.  The glass products are made at four different US plants. Currently, the company produces each product at one location only and serves each customer directly from the source plant. 
+Unfortunately, there have been many complaints about the supply chain lately and the CEO would like to address them this year. The most common complaints with the current supply chain have been that (1) service to some distant customers has been unreliable and (2) rising gas prices have had a large impact on the balance sheet through transportation costs.
+The CEO would like to better understand two potential changes to the supply chain which may ameliorate these concerns:
+
+1.	In order to improve service, it has been proposed that warehouses be built in such a way that 80% of demand by tons is within 500 miles of the nearest source. The CEO would like to know how many warehouses this would require and what the impact on transportation costs would be.
+
+You have been tasked with building a model to help the CEO determine if either of these two changes should be made. In order to do this, you will need to use the model to determine how the proposed changes to the supply chain would affect performance relative to the current state. In order to communicate your results and recommendations, you should prepare a presentation that you will give to the company leadership.  Include in your presentation relevant metrics for supply chain performance and how they are impacted in each scenario.
+There are additional details on the following page and in the included Excel workbook.  If you have any questions about the requirements, you should contact the client’s internal supply chain analyst, Bradford Winkelman, at bradford.winkelman@opexanalytics.com.
+Good Luck!
+
+
+
+
+PROBLEM DETAILS:
+•	Data are provided in the file: case_study.xlsx.
+•	Plant, customer, and product details are given on the first three tabs of the workbook (“Plants”, “Customers”, and “Product”).
+•	Annual Demand is given in the “Demand” worksheet.  Demand should be satisfied on a quarterly basis (assume that all quarters have the same expected demand).
+•	Product revenues are also given per ton in the “Demand” worksheet. 
+•	Products are shipped in trucks which can carry 10 tons each.  Shipping costs 2$ per truck per mile.
+•	Currently, products 4 and 5 (blue and grey) are made at plant 4.  Products 1, 2, and 3 (clear, green, and red) are made at plants 1, 2, and 3, respectively.
+•	The manufacturing process for every product is different and the plant/product level capacities and costs are given in the “Production Capacity” worksheet.
+•	In addition to plant/product level constraints, each plant has working hour constraints:
+-	Each plant can only run for 240 hours/month (8 hours per day, 30 days per month) when running without overtime. 
+-	An additional 120 hours/month of overtime are available, but at an increased overtime production cost (50% more than regular time). Overtime hours can be used incrementally.
+-	Plant 1 is the fastest and can make products at the rate of 100 tons/hour. 
+-	All other plants can produce products at 50 tons/hour.
+-	Production costs are given per ton in the “Production Capacity” worksheet.
+•	Note that at plant 4 there is one setup required, as the plant must produce products 4 and 5. This will result in the plant switching setups once each quarter. It costs 8 days to switch from product 4 to 5, and 6 to switch back.
+Problem:
+•	You need at least 80% of your demand (by tons) to be satisfied by a facility within 500 miles of the customer.
+•	You want to find the minimum number of warehouses that will satisfy the given constraint. 
+•	Warehouses can be built at any of the existing customer locations.
